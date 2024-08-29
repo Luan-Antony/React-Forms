@@ -66,4 +66,8 @@ const DeckOfCards = () => {
     );
 };
 
+CardsList.propTypes = {
+    cards: PropTypes.array,
+};
+
 export default DeckOfCards;

@@ -65,4 +65,8 @@ const Form = ({ addCard }) => {
 
 //onChange vai ser usado pra mudar o "value" pois aqui o input é um componente do react e não HTML. o onChange vai lidar com a mudança do value do input
 
+Form.propTypes = {
+    addCard: PropTypes.func.isRequired,
+};
+
 export default Form;
