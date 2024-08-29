@@ -12,7 +12,7 @@ const Form = ({ addCard }) => {
         const { target } = event;
         const { name } = target;
         const { value } = target;
-        //dentro do target vai ser pego do event, e o name e value vai ser pego desse target
+//dentro do target vai ser pego do event, e o name e value vai ser pego desse target
         setInputs({
             ...inputs,
             [name]: value,
@@ -26,6 +26,16 @@ const Form = ({ addCard }) => {
 
     return (
         <form onSubmit={handleSubmit}>
+            <div>
+                <label htmlFor="image">Endereço da imagem da carta</label>
+                <input
+                    type="text"
+                    id="image"
+                    name="image"
+                    onChange={handleInputChange}
+                    value={inputs.image}
+                />
+            </div>
             <div>
                 <label htmlFor="value">Nome da carta</label>
                 <select
