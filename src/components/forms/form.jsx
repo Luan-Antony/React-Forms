@@ -61,7 +61,7 @@ const Form = ({ addCard }) => {
     );
 };
 
-//o htmlFor funciona da mesma forma que o className, o for apenas não funciona no React
+//o htmlFor funciona da mesma forma que o className, o for é uma palavra reservada no React
 
 //onChange vai ser usado pra mudar o "value" pois aqui o input é um componente do react e não HTML. o onChange vai lidar com a mudança do value do input
 
